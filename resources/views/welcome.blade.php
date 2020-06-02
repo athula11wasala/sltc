@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Plus Admin</title>
+    <title>SLTC</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="../assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="../assets/vendors/flag-icon-css/css/flag-icon.min.css">
@@ -209,7 +209,7 @@
                       <p class="text-muted font-13 mb-0"></p>
                   
                     </div>
-                    <h5 class="font-weight-semibold"> SLTC experts fighting the COVID-19 pandemic on many levels </h5>
+                    <h5 class="font-weight-semibold">  </h5>
                     <div class="d-flex justify-content-between font-weight-semibold">
                      
                     </div>
@@ -227,7 +227,7 @@
                       <p class="text-muted font-13 mb-0"></p>
                   
                     </div>
-                    <h5 class="font-weight-semibold"> SLTC experts fighting the COVID-19 pandemic on many levels </h5>
+                    <h5 class="font-weight-semibold">  </h5>
                     <div class="d-flex justify-content-between font-weight-semibold">
                      
                     </div>
