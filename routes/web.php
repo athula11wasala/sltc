@@ -18,7 +18,7 @@ Route::get('/', function () {
 
 Route::group(["prefix" => "backend"], function () {
     Route::get('/info',function () {
-        return view('welcome');
+        return view('edit_home');
     });
    
 });
