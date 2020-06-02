@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::group(["prefix" => "backend"], function () {
+
+
+    Route::get('/', function () {
+        return view('welcome');
+    })
+
+});;
