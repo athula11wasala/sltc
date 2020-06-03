@@ -6,7 +6,7 @@ use DB;
 use App\Models\ImageInfo;
 use Illuminate\Support\Facades\Config;
 
-class ImageInfoRepository extends Repository
+class ImageInfoRepository 
 {
    /**
      * get all department info
