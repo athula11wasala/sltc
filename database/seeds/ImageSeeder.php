@@ -2,7 +2,6 @@
 
 use Illuminate\Database\Seeder;
 use App\Models\ImageInfo;
-use Illuminate\Support\Facades\DB;
 
 class ImageSeeder extends Seeder
 {
@@ -13,8 +12,9 @@ class ImageSeeder extends Seeder
      */
     public function run()
     {
-		ImageInfo::truncate();
 		
+        DB::table("tbl_image_info")->delete();
+
         $imageInfo = new ImageInfo();
         $imageInfo->src = "assets/notice/covid_home/tile1.jpg";
         $imageInfo->hyp_info = "https://www.sltc.ac.lk/covid19-sltc-updates";
