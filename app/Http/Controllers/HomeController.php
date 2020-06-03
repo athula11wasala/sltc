@@ -36,9 +36,23 @@ class HomeController extends Controller
     {
 
         $data = $this->commonService->getImagetDetail($request->all());
-
-        print_r($data); die();
+        $url = url('/'); 
+       
+        return view('/home_backend')->with(['data'=>$data,'url' =>$url]);
         //return $this->respond($data);
+    }
+    
+    public function updateImageInfo($id = null){
+        
+        if(isset($id)){
+            
+        $data = $this->commonService->retImageInfo($id);
+        
+        }
+    //echo "<pre>".  print_r($data,1). "</pre>"; die();
+      
+       return view('/edit_home')->with(['data'=>$data]);
+        
     }
 
     public function showCompany($id = null)

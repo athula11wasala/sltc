@@ -6,31 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Plus Admin</title>
     <!-- plugins:css -->
-	<link rel="stylesheet" href="../assets/vendors/mdi/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="../assets/vendors/flag-icon-css/css/flag-icon.min.css">
-    <link rel="stylesheet" href="../assets/vendors/css/vendor.bundle.base.css">
+	<link rel="stylesheet" href="{{ URL::to('/') }}/assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="{{ URL::to('/') }}/assets/vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="{{ URL::to('/') }}/assets/vendors/css/vendor.bundle.base.css">
     <!-- endinject -->
     <!-- Plugin css for this page -->
-    <link rel="stylesheet" href="../assets/vendors/select2/select2.min.css" />
-    <link rel="stylesheet" href="../assets/vendors/select2-bootstrap-theme/select2-bootstrap.min.css" />
+    <link rel="stylesheet" href="{{ URL::to('/') }}/assets/vendors/select2/select2.min.css" />
+    <link rel="stylesheet" href="{{ URL::to('/') }}/assets/vendors/select2-bootstrap-theme/select2-bootstrap.min.css" />
     <!-- End plugin css for this page -->
     <!-- inject:css -->
     <!-- endinject -->
     <!-- Layout styles -->
-    <link rel="stylesheet" href="../assets/css/demo_2/style.css" />
+    <link rel="stylesheet" href="{{ URL::to('/') }}/assets/css/demo_2/style.css" />
     <!-- End layout styles -->
-    <link rel="shortcut icon" href="../assets/images/favicon.png" />
+    <link rel="shortcut icon" href="{{ URL::to('/') }}/assets/images/favicon.png" />
   </head>
   <body>
     <div class="container-scroller">
-      <!-- partial:../../partials/_horizontal-navbar.html -->
+      <!-- partial:{{ URL::to('/') }}/partials/_horizontal-navbar.html -->
       <div class="horizontal-menu">
         
         <nav class="bottom-navbar">
           <div class="container">
             <ul class="nav page-navigation">
               <li class="nav-item">
-                <a class="nav-link" href="../../index.html">
+                <a class="nav-link" href="{{ URL::to('/') }}/index.html">
                   <i class="mdi mdi-compass-outline menu-icon"></i>
                   <span class="menu-title">Dashboard</span>
                 </a>
@@ -44,37 +44,37 @@
                 <div class="submenu">
                   <ul class="submenu-item">
                     <li class="nav-item">
-                      <a class="nav-link" href="../../pages/ui-features/buttons.html">Buttons</a>
+                      <a class="nav-link" href="{{ URL::to('/') }}/pages/ui-features/buttons.html">Buttons</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="../../pages/ui-features/dropdowns.html">Dropdown</a>
+                      <a class="nav-link" href="{{ URL::to('/') }}/pages/ui-features/dropdowns.html">Dropdown</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="../../pages/ui-features/typography.html">Typography</a>
+                      <a class="nav-link" href="{{ URL::to('/') }}/pages/ui-features/typography.html">Typography</a>
                     </li>
                   </ul>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../../pages/forms/basic_elements.html">
+                <a class="nav-link" href="{{ URL::to('/') }}/pages/forms/basic_elements.html">
                   <i class="mdi mdi-clipboard-text menu-icon"></i>
                   <span class="menu-title">Forms</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../../pages/icons/mdi.html">
+                <a class="nav-link" href="{{ URL::to('/') }}/pages/icons/mdi.html">
                   <i class="mdi mdi-contacts menu-icon"></i>
                   <span class="menu-title">Icons</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../../pages/charts/chartjs.html">
+                <a class="nav-link" href="{{ URL::to('/') }}/pages/charts/chartjs.html">
                   <i class="mdi mdi-chart-bar menu-icon"></i>
                   <span class="menu-title">Charts</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../../pages/tables/basic-table.html">
+                <a class="nav-link" href="{{ URL::to('/') }}/pages/tables/basic-table.html">
                   <i class="mdi mdi-table-large menu-icon"></i>
                   <span class="menu-title">Tables</span>
                 </a>
@@ -121,14 +121,14 @@
                     <form class="forms-sample">
                       <div class="form-group">
                      
-                       <img src="../assets/images/dashboard/tile3.jpg"   style="
+                       <img src="{{ URL::to('/') }}<?php   echo '/'  .$data['src'];?>"  style="
     width: 354px;
     height: 220px;
 " class="img-rounded" alt="Cinque Terre">
                       </div>
                       <div class="form-group">
                         <label for="exampleInputEmail3">Url</label>
-                        <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email" />
+                        <input type="text" name ="InputUrl" class="form-control" id="exampleInputEmail3" placeholder="Url"  value="<?php   echo $data["hyp_info"];?>"/>
                       </div>
 					  <div class="form-group">
                         <label for="exampleInputEmail3">Description</label>
@@ -160,7 +160,7 @@
             </div>
           </div>
           <!-- content-wrapper ends -->
-          <!-- partial:../../partials/_footer.html -->
+          <!-- partial:{{ URL::to('/') }}/partials/_footer.html -->
           <footer class="footer">
             <div class="container">
               <div class="d-sm-flex justify-content-center justify-content-sm-between">
@@ -176,23 +176,23 @@
     </div>
     <!-- container-scroller -->
     <!-- plugins:js -->
-    <script src="../assets/vendors/js/vendor.bundle.base.js"></script>
+    <script src="{{ URL::to('/') }}/assets/vendors/js/vendor.bundle.base.js"></script>
     <!-- endinject -->
     <!-- Plugin js for this page -->
-    <script src="../assets/vendors/select2/select2.min.js"></script>
-    <script src="../assets/vendors/typeahead.js/typeahead.bundle.min.js"></script>
+    <script src="{{ URL::to('/') }}/assets/vendors/select2/select2.min.js"></script>
+    <script src="{{ URL::to('/') }}/assets/vendors/typeahead.js/typeahead.bundle.min.js"></script>
     <!-- End plugin js for this page -->
     <!-- inject:js -->
-    <script src="../assets/js/off-canvas.js"></script>
-    <script src="../assets/js/hoverable-collapse.js"></script>
-    <script src="../assets/js/misc.js"></script>
-    <script src="../assets/js/settings.js"></script>
-    <script src="../assets/js/todolist.js"></script>
+    <script src="{{ URL::to('/') }}/assets/js/off-canvas.js"></script>
+    <script src="{{ URL::to('/') }}/assets/js/hoverable-collapse.js"></script>
+    <script src="{{ URL::to('/') }}/assets/js/misc.js"></script>
+    <script src="{{ URL::to('/') }}/assets/js/settings.js"></script>
+    <script src="{{ URL::to('/') }}/assets/js/todolist.js"></script>
     <!-- endinject -->
     <!-- Custom js for this page -->
-    <script src="../assets/js/file-upload.js"></script>
-    <script src="../assets/js/typeahead.js"></script>
-    <script src="../assets/js/select2.js"></script>
+    <script src="{{ URL::to('/') }}/assets/js/file-upload.js"></script>
+    <script src="{{ URL::to('/') }}/assets/js/typeahead.js"></script>
+    <script src="{{ URL::to('/') }}/assets/js/select2.js"></script>
     <!-- End custom js for this page -->
   </body>
 </html>

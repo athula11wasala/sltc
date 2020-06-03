@@ -19,6 +19,19 @@ class ImageInfoRepository
 
         return $objImage;
     }
+    
+      /**
+     * get all department info
+     * @return type
+     */    
+    public function getImage($id) {
+
+        $objImage = ImageInfo::select("*")
+                        ->where("id",$id)
+                       ->first();
+
+        return $objImage;
+    }
 
   
 

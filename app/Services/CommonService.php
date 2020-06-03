@@ -25,6 +25,12 @@ class CommonService
        
         return $this->imageInfoRepository->getAllImage();
     }
+    
+     public function retImageInfo($id)
+    {
+       
+        return $this->imageInfoRepository->getImage($id);
+    }
 
     
    /*

@@ -19,10 +19,10 @@ Route::get('/', function () {
 Route::group(["prefix" => "backend"], function () {
     
     Route::get("/",'HomeController@index');
+    
+    Route::any("/edit/{id?}",'HomeController@updateImageInfo');
 
-    Route::get('/edit',function () {
-        return view('edit_home');
-    });
+  
    
 });
 
