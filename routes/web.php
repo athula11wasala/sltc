@@ -18,12 +18,13 @@ Route::get('/', function () {
 
 Route::group(["prefix" => "backend"], function () {
     
-    Route::get('/', function () {
-        return view('home_backend');
-    });
+    Route::get("/",'HomeController@index');
 
     Route::get('/edit',function () {
         return view('edit_home');
     });
    
 });
+
+
+ 
