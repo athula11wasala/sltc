@@ -42,13 +42,17 @@ class HomeController extends Controller
         //return $this->respond($data);
     }
     
-    public function updateImageInfo($id = null){
+    public function updateImageInfo($id = null, Request $request){
         
+        if ( $request->isMethod('post')) {
+            die();
+        }
         if(isset($id)){
             
         $data = $this->commonService->retImageInfo($id);
         
         }
+        
     //echo "<pre>".  print_r($data,1). "</pre>"; die();
       
        return view('/edit_home')->with(['data'=>$data]);
