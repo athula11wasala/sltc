@@ -2,8 +2,6 @@
 
 namespace App\Repositories;
 
-
-use Bosnadev\Repositories\Eloquent\Repository;
 use DB;
 use App\Models\ImageInfo;
 use Illuminate\Support\Facades\Config;
