@@ -5,20 +5,22 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- plugins:css -->
-    <link rel="stylesheet" href="{{ URL::to('/') }}/vendors/mdi/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="{{ URL::to('/') }}/vendors/flag-icon-css/css/flag-icon.min.css">
-    <link rel="stylesheet" href="{{ URL::to('/') }}/vendors/css/vendor.bundle.base.css">
+    
+    <title>SLTC/</title>
+    <link rel="stylesheet" href="{{ URL::to('/') }}/assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="{{ URL::to('/') }}/assets/vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="{{ URL::to('/') }}/assets/vendors/css/vendor.bundle.base.css">
     <!-- endinject -->
     <!-- Plugin css for this page -->
-    <link rel="stylesheet" href="{{ URL::to('/') }}/vendors/jquery-bar-rating/css-stars.css" />
-    <link rel="stylesheet" href="{{ URL::to('/') }}/vendors/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="{{ URL::to('/') }}/assets/vendors/jquery-bar-rating/css-stars.css" />
+    <link rel="stylesheet" href="{{ URL::to('/') }}/assets/vendors/font-awesome/css/font-awesome.min.css" />
     <!-- End plugin css for this page -->
     <!-- inject:css -->
     <!-- endinject -->
     <!-- Layout styles -->
-    <link rel="stylesheet" href="{{ URL::to('/') }}/css/demo_2/style.css" />
+    <link rel="stylesheet" href="{{ URL::to('/') }}/assets/css/demo_2/style.css" />
     <!-- End layout styles -->
-    <link rel="shortcut icon" href="{{ URL::to('/') }}/images/favicon.png" />
+    <link rel="shortcut icon" href="{{ URL::to('/') }}/assets/images/favicon.png" />
   </head>
   
   <body>
@@ -134,23 +136,23 @@
   <div class="carousel-inner"   role="listbox">
     <!--First slide-->
     <div class="carousel-item active">
-      <img class=" img-fluid w-100"  src="{{ URL::to('/') }}/images/dashboard/tile7.jpg"
+      <img class=" img-fluid w-100"  src="{{ URL::to('/') }}/assets/images/dashboard/tile7.jpg"
         alt="First slide">
     </div>
     <!--/First slide-->
     <!--Second slide-->
     <div class="carousel-item">
-      <img class="img-fluid w-100"  src="{{ URL::to('/') }}/images/dashboard/tile6.jpg"
+      <img class="img-fluid w-100"  src="{{ URL::to('/') }}/assets/images/dashboard/tile6.jpg"
         alt="Second slide">
     </div>
     <!--/Second slide-->
     <!--Third slide-->
     <div class="carousel-item">
-      <img class="img-fluid w-100"  src="{{ URL::to('/') }}/images/dashboard/tile1.jpg"
+      <img class="img-fluid w-100"  src="{{ URL::to('/') }}/assets/images/dashboard/tile1.jpg"
         alt="Third slide">
     </div>
 	<div class="carousel-item">
-      <img class="img-fluid w-100"  src="{{ URL::to('/') }}/images/dashboard/tile5.jpg"
+      <img class="img-fluid w-100"  src="{{ URL::to('/') }}/assets/images/dashboard/tile5.jpg"
         alt="Third slide">
     </div>
     <!--/Third slide-->
@@ -180,7 +182,7 @@
                   <div class="card-body d-flex flex-wrap justify-content-between">
                     <div> 
                         <a href=" href="www:google.com"">
-                            <img class="img-fluid w-100" src="{{ URL::to('/') }}/images/dashboard/tile2.jpg" alt="" />
+                            <img class="img-fluid w-100" src="{{ URL::to('/') }}/assets/images/dashboard/tile2.jpg" alt="" />
 				  
                         </a>   
                     </div>
@@ -203,7 +205,7 @@
               <div class="col-sm-3 stretch-card grid-margin">
                 <div class="card">
                   <div class="card-body p-0">
-                    <img class="img-fluid w-100" src="{{ URL::to('/') }}/images/dashboard/tile4.jpg" alt="" />
+                    <img class="img-fluid w-100" src="{{ URL::to('/') }}/assets/images/dashboard/tile4.jpg" alt="" />
                   </div>
                   <div class="card-body px-3 text-dark">
                     <div class="d-flex justify-content-between">
@@ -221,7 +223,7 @@
               <div class="col-sm-3 stretch-card grid-margin">
                 <div class="card">
                   <div class="card-body p-0">
-                    <img class="img-fluid w-100" src="{{ URL::to('/') }}/images/dashboard/tile8.jpg" alt="" />
+                    <img class="img-fluid w-100" src="{{ URL::to('/') }}/assets/images/dashboard/tile8.jpg" alt="" />
                   </div>
                   <div class="card-body px-3 text-dark">
                     <div class="d-flex justify-content-between">
@@ -238,7 +240,7 @@
 			<div class="col-sm-3 stretch-card grid-margin">
                 <div class="card">
                   <div class="card-body p-0">
-                    <img class="img-fluid w-100" src="{{ URL::to('/') }}/images/dashboard/tile3-2.jpg" alt="" />
+                    <img class="img-fluid w-100" src="{{ URL::to('/') }}/assets/images/dashboard/tile3-2.jpg" alt="" />
                   </div>
                   <div class="card-body px-3 text-dark">
                     <div class="d-flex justify-content-between">
@@ -255,7 +257,7 @@
               <div class="col-sm-3 stretch-card grid-margin">
                 <div class="card">
                   <div class="card-body p-0">
-                    <img class="img-fluid" src="{{ URL::to('/') }}/images/dashboard/tile6.jpg" alt="" />
+                    <img class="img-fluid" src="{{ URL::to('/') }}/assets/images/dashboard/tile6.jpg" alt="" />
                   </div>
                   <div class="card-body px-3 text-dark">
                     <div class="d-flex justify-content-between">
@@ -404,26 +406,26 @@ Ingiriya Road, Padukka, Sri Lanka.</b></small>
     </div>
     <!-- container-scroller -->
     <!-- plugins:js -->
-    <script src="{{ URL::to('/') }}/vendors/js/vendor.bundle.base.js"></script>
+    <script src="{{ URL::to('/') }}/assets/vendors/js/vendor.bundle.base.js"></script>
     <!-- endinject -->
     <!-- Plugin js for this page -->
-    <script src="{{ URL::to('/') }}/vendors/jquery-bar-rating/jquery.barrating.min.js"></script>
-    <script src="{{ URL::to('/') }}/vendors/chart.js/Chart.min.js"></script>
-    <script src="{{ URL::to('/') }}/vendors/flot/jquery.flot.js"></script>
-    <script src="{{ URL::to('/') }}/vendors/flot/jquery.flot.resize.js"></script>
-    <script src="{{ URL::to('/') }}/vendors/flot/jquery.flot.categories.js"></script>
-    <script src="{{ URL::to('/') }}/vendors/flot/jquery.flot.fillbetween.js"></script>
-    <script src="{{ URL::to('/') }}/vendors/flot/jquery.flot.stack.js"></script>
+    <script src="{{ URL::to('/') }}/assets/vendors/jquery-bar-rating/jquery.barrating.min.js"></script>
+    <script src="{{ URL::to('/') }}/assets/vendors/chart.js/Chart.min.js"></script>
+    <script src="{{ URL::to('/') }}/assets/vendors/flot/jquery.flot.js"></script>
+    <script src="{{ URL::to('/') }}/assets/vendors/flot/jquery.flot.resize.js"></script>
+    <script src="{{ URL::to('/') }}/assets/vendors/flot/jquery.flot.categories.js"></script>
+    <script src="{{ URL::to('/') }}/assets/vendors/flot/jquery.flot.fillbetween.js"></script>
+    <script src="{{ URL::to('/') }}/assets/vendors/flot/jquery.flot.stack.js"></script>
     <!-- End plugin js for this page -->
     <!-- inject:js -->
-    <script src="{{ URL::to('/') }}/js/off-canvas.js"></script>
-    <script src="{{ URL::to('/') }}/js/hoverable-collapse.js"></script>
-    <script src="{{ URL::to('/') }}/js/misc.js"></script>
-    <script src="{{ URL::to('/') }}/js/settings.js"></script>
-    <script src="{{ URL::to('/') }}/js/todolist.js"></script>
+    <script src="{{ URL::to('/') }}/assets/js/off-canvas.js"></script>
+    <script src="{{ URL::to('/') }}/assets/js/hoverable-collapse.js"></script>
+    <script src="{{ URL::to('/') }}/assets/js/misc.js"></script>
+    <script src="{{ URL::to('/') }}/assets/js/settings.js"></script>
+    <script src="{{ URL::to('/') }}/assets/js/todolist.js"></script>
     <!-- endinject -->
     <!-- Custom js for this page -->
-    <script src="{{ URL::to('/') }}/js/dashboard.js"></script>
+    <script src="{{ URL::to('/') }}/assets/js/dashboard.js"></script>
     <!-- End custom js for this page -->
   </body>
 </html>
