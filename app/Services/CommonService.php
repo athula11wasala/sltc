@@ -20,9 +20,10 @@ class CommonService
         $this->imageInfoRepository = $imageRepository;
     }
     
-     public function getImagetDetail($request)
+     public function getImagetDetail()
     {
-        return $this->imageInfoRepository->getAllImage($request->all());
+       
+        return $this->imageInfoRepository->getAllImage();
     }
 
     
