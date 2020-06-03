@@ -18,6 +18,7 @@ class CreateContactTable extends Migration
             $table->string ( 'description',512 );
             $table->tinyInteger ( 'type' )->nullable ()->default ( 1 )->comment = "type 1=tel, 2=email 3=address";
             $table->timestamps();
+            
         });
     }
 

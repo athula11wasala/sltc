@@ -109,23 +109,23 @@
                                  <div class="carousel-inner"   role="listbox">
                                     <!--First slide-->
                                     <div class="carousel-item active">
-                                       <img class=" img-fluid w-100"  src="../assets/images/dashboard/tile7.jpg"
+                                       <img class=" img-fluid w-100" href="https://www.sltc.ac.lk/covid19-sltc-updates" src="../assets/images/dashboard/tile7.jpg"
                                           alt="First slide">
                                     </div>
                                     <!--/First slide-->
                                     <!--Second slide-->
                                     <div class="carousel-item">
-                                       <img class="img-fluid w-100"  src="../assets/images/dashboard/tile6.jpg"
+                                       <img class="img-fluid w-100"  href="https://www.sltc.ac.lk/online-payments" src="../assets/images/dashboard/tile6.jpg"
                                           alt="Second slide">
                                     </div>
                                     <!--/Second slide-->
                                     <!--Third slide-->
                                     <div class="carousel-item">
-                                       <img class="img-fluid w-100"  src="../assets/images/dashboard/tile1.jpg"
+                                       <img class="img-fluid w-100"  href="https://www.sltc.ac.lk/covid19-sltc-updates" src="../assets/images/dashboard/tile1.jpg"
                                           alt="Third slide">
                                     </div>
                                     <div class="carousel-item">
-                                       <img class="img-fluid w-100"  src="../assets/images/dashboard/tile5.jpg"
+                                       <img class="img-fluid w-100"  href="http://research.sltc.ac.lk" src="../assets/images/dashboard/tile5.jpg"
                                           alt="Third slide">
                                     </div>
                                     <!--/Third slide-->
