@@ -144,7 +144,7 @@
                               </div>
                            </div>
                            <div>
-                              <div class="text-center ">    <button type="submit" class="btn btn-primary mb-2"> Modify </button> 
+                              <div class="text-center ">    <button id='btnClick' type="submit" class="btn btn-primary mb-2"> Modify </button> 
                               </div>
                            </div>
                         </div>
@@ -350,6 +350,16 @@
       <!-- endinject -->
       <!-- Custom js for this page -->
       <script src="../assets/js/dashboard.js"></script>
+	  <script>
+	  $( document ).ready(function() {
+    $( "#btnClick" ).click(function() {
+  alert( "Handler for .click() called." );
+  console.log(document.querySelector('.carousel-item.active > img').getAttribute('src'));
+});;
+});
+	    
+		
+	  </script>
       <!-- End custom js for this page -->
    </body>
 </html>
