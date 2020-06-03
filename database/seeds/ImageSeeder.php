@@ -13,7 +13,7 @@ class ImageSeeder extends Seeder
      */
     public function run()
     {
-		DB::table('tbl_image_info')->truncate();
+		ImageInfo::truncate();
 		
         $imageInfo = new ImageInfo();
         $imageInfo->src = "assets/notice/covid_home/tile1.jpg";
