@@ -30,27 +30,6 @@ class ContactInfo extends Model
     protected $hidden = [
     ];
     
-    public function getTeAttribute($value)
-    {
-       die(); 
-        if($value == "1"){
-            
-            $data = "tel";
-        }
-        else if($value == "2"){
-            
-            
-            $data = "email";
-        }
-        else if($value == "3"){
-            
-            
-            $data = "address";
-        }
-        
-        return $data;
-    }
-
-   
+    
 
 }

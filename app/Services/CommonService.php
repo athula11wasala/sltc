@@ -32,7 +32,6 @@ class CommonService
 
     public function updateImagetDetail($data) {
 
-     
         if ($data['HndType'] == "img") {
 
             return $this->imageInfoRepository->updateImageInfo($data);
@@ -44,7 +43,6 @@ class CommonService
 
     public function retImageInfo($id, $type) {
 
-       
         if ($type == "img") {
 
             return $this->imageInfoRepository->getImage($id);

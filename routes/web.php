@@ -12,16 +12,15 @@
 */
 
 
- Route::get("/",'HomeController@Homeindex');
+ Route::get("/",'HomeController@index');
 
 Route::group(["prefix" => "backend"], function () {
     
     Route::get("/",'HomeController@index');
     
-    Route::get("/edit/{id?}/{type?}",'HomeController@backEndImageInfo');
+    Route::get("/edit/{id?}/{type?}",'HomeController@RetriveImgInfo');
    
     Route::post("update",'HomeController@postImageInfo');
-  
    
 });
 

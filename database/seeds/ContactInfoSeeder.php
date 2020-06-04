@@ -13,6 +13,7 @@ class ContactInfoSeeder extends Seeder
     public function run()
     {
   
+         DB::table("tbl_contact_info")->truncate();
         $contactInfo = new ContactInfo();
         $contactInfo->type = "1";
         $contactInfo->description = "+94 11 2100 500 / +94 71 1100 500";

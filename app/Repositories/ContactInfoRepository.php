@@ -19,9 +19,7 @@ class ContactInfoRepository {
                    WHEN tbl_contact_info.type = 2 THEN 'email'
                     ELSE 'address' END) AS type")
                 ->get();
-        
-            
-
+      
         return $objContact;
     }
 

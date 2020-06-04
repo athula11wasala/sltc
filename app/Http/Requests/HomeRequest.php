@@ -30,8 +30,6 @@ class HomeRequest extends FormRequest {
 
     public function rules() {
 
-        // $fileName = $image->getClientOriginalName ();
-
         switch ($this->method()) {
             case "POST":
 
