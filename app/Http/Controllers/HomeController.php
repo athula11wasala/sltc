@@ -42,7 +42,7 @@ class HomeController extends Controller
         //return $this->respond($data);
     }
     
-    public function updateImageInfo($id = null, Request $request){
+    public function updateImageInfo($id = null,$type=null, Request $request){
         
         if ( $request->isMethod('post')) {
             die();

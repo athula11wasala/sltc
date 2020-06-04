@@ -1,96 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <!-- plugins:css -->
-    
-    <title>SLTC/</title>
-    <link rel="stylesheet" href="{{ URL::to('/') }}/assets/vendors/mdi/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="{{ URL::to('/') }}/assets/vendors/flag-icon-css/css/flag-icon.min.css">
-    <link rel="stylesheet" href="{{ URL::to('/') }}/assets/vendors/css/vendor.bundle.base.css">
-    <!-- endinject -->
-    <!-- Plugin css for this page -->
-    <link rel="stylesheet" href="{{ URL::to('/') }}/assets/vendors/jquery-bar-rating/css-stars.css" />
-    <link rel="stylesheet" href="{{ URL::to('/') }}/assets/vendors/font-awesome/css/font-awesome.min.css" />
-    <!-- End plugin css for this page -->
-    <!-- inject:css -->
-    <!-- endinject -->
-    <!-- Layout styles -->
-    <link rel="stylesheet" href="{{ URL::to('/') }}/assets/css/demo_2/style.css" />
-    <!-- End layout styles -->
-    <link rel="shortcut icon" href="{{ URL::to('/') }}/assets/images/favicon.png" />
-  </head>
-  
-  <body>
-    <div class="container-scroller">
-      <!-- partial:partials/_horizontal-navbar.html -->
-      <div class="horizontal-menu">
-     
-        <nav class="bottom-navbar">
-          <div class="container">
-            <ul class="nav page-navigation">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">
-                  <i class="mdi mdi-compass-outline menu-icon"></i>
-                  <span class="menu-title">Home</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="mdi mdi-monitor-dashboard menu-icon"></i>
-                  <span class="menu-title">WHO WE ARE</span>
-                  <i class="menu-arrow"></i>
-                </a>
-                <div class="submenu">
-                  <ul class="submenu-item">
-                    <li class="nav-item">
-                      <a class="nav-link" href="pages/ui-features/buttons.html">STUDY</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="pages/ui-features/dropdowns.html">EDUCATION</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="pages/ui-features/typography.html">RESEARCH</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pages/forms/basic_elements.html">
-                  <i class="mdi mdi-clipboard-text menu-icon"></i>
-                  <span class="menu-title">STUDY</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pages/icons/mdi.html">
-                  <i class="mdi mdi-contacts menu-icon"></i>
-                  <span class="menu-title">EDUCATION</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pages/charts/chartjs.html">
-                  <i class="mdi mdi-chart-bar menu-icon"></i>
-                  <span class="menu-title">RESEARCH</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pages/tables/basic-table.html">
-                  <i class="mdi mdi-table-large menu-icon"></i>
-                  <span class="menu-title">STAFF & STUDENTS</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="https://www.bootstrapdash.com/demo/plus-free/documentation/documentation.html" class="nav-link" target="_blank">
-                  <i class="mdi mdi-file-document-box menu-icon"></i>
-                  <span class="menu-title">`WORK WITH US</span></a>
-              </li>
-             
-            </ul>
-          </div>
-        </nav>
-      </div>
+
+@include('layouts.header')
       <!-- partial -->
       <div class="container-fluid page-body-wrapper">
         <div class="main-panel">
@@ -104,7 +13,7 @@
 			
 			
 			
-			<!-- end -->
+			<!-- dend -->
 			
 			
 			
@@ -369,17 +278,8 @@ Ingiriya Road, Padukka, Sri Lanka.</b></small>
 			
           </div>
           <!-- content-wrapper ends -->
-          <!-- partial:partials/_footer.html -->
           
 		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  <!---- end ddddddddddddd  --->
 		  <footer class="footer" style="background: #2d3246;">
             <div class="container">
 			 <div class="row row-30">
@@ -405,27 +305,5 @@ Ingiriya Road, Padukka, Sri Lanka.</b></small>
       <!-- page-body-wrapper ends -->
     </div>
     <!-- container-scroller -->
-    <!-- plugins:js -->
-    <script src="{{ URL::to('/') }}/assets/vendors/js/vendor.bundle.base.js"></script>
-    <!-- endinject -->
-    <!-- Plugin js for this page -->
-    <script src="{{ URL::to('/') }}/assets/vendors/jquery-bar-rating/jquery.barrating.min.js"></script>
-    <script src="{{ URL::to('/') }}/assets/vendors/chart.js/Chart.min.js"></script>
-    <script src="{{ URL::to('/') }}/assets/vendors/flot/jquery.flot.js"></script>
-    <script src="{{ URL::to('/') }}/assets/vendors/flot/jquery.flot.resize.js"></script>
-    <script src="{{ URL::to('/') }}/assets/vendors/flot/jquery.flot.categories.js"></script>
-    <script src="{{ URL::to('/') }}/assets/vendors/flot/jquery.flot.fillbetween.js"></script>
-    <script src="{{ URL::to('/') }}/assets/vendors/flot/jquery.flot.stack.js"></script>
-    <!-- End plugin js for this page -->
-    <!-- inject:js -->
-    <script src="{{ URL::to('/') }}/assets/js/off-canvas.js"></script>
-    <script src="{{ URL::to('/') }}/assets/js/hoverable-collapse.js"></script>
-    <script src="{{ URL::to('/') }}/assets/js/misc.js"></script>
-    <script src="{{ URL::to('/') }}/assets/js/settings.js"></script>
-    <script src="{{ URL::to('/') }}/assets/js/todolist.js"></script>
-    <!-- endinject -->
-    <!-- Custom js for this page -->
-    <script src="{{ URL::to('/') }}/assets/js/dashboard.js"></script>
-    <!-- End custom js for this page -->
-  </body>
-</html>
+   
+    @include('layouts.footer')

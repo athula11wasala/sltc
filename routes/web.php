@@ -20,7 +20,7 @@ Route::group(["prefix" => "backend"], function () {
     
     Route::get("/",'HomeController@index');
     
-    Route::any("/edit/{id?}",'HomeController@updateImageInfo');
+    Route::any("/edit/{id?}/{type?}",'HomeController@updateImageInfo');
 
   
    
