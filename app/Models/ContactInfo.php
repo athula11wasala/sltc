@@ -3,9 +3,11 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Notifications\Notifiable;
 
 class ContactInfo extends Model
 {
+    use Notifiable;
     /**
      * The attributes that are mass assignable.
      *
@@ -16,7 +18,7 @@ class ContactInfo extends Model
     protected $primaryKey = 'id';
 
     protected $fillable = [
-        'id','type','description'
+        'id','type','description','symbol'
     ];
     public $timestamps = true;
 
@@ -27,6 +29,27 @@ class ContactInfo extends Model
      */
     protected $hidden = [
     ];
+    
+    public function getTeAttribute($value)
+    {
+       die(); 
+        if($value == "1"){
+            
+            $data = "tel";
+        }
+        else if($value == "2"){
+            
+            
+            $data = "email";
+        }
+        else if($value == "3"){
+            
+            
+            $data = "address";
+        }
+        
+        return $data;
+    }
 
    
 

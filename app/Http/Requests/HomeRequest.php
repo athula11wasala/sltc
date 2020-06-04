@@ -24,7 +24,7 @@ class HomeRequest extends FormRequest {
         return [
             'InputUrl.required' => 'The Url is Required.',
             'InputImg.required' => 'The Image is Required.',
-            'InputContact.required' => 'The Contact details is Required.',
+            'InputContact.required' => 'The Description is Required.',
         ];
     }
 
@@ -36,7 +36,6 @@ class HomeRequest extends FormRequest {
             case "POST":
 
                 if ($this->input('HndType') == 'img') {
-                    
 
                     $rules['InputUrl'] = 'required';
                     if (!empty($this->file('InputImg'))) {

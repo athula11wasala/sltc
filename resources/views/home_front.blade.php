@@ -1,7 +1,4 @@
-
 @include('layouts.header')
-
-
             <!-- partial -->
             <div class="container-fluid page-body-wrapper">
                 <div class="main-panel">
@@ -34,17 +31,15 @@
                                     } else {
                                         $carsoul_type=  "item";
                                     }
-                              
-							  if($num <4) {  unset($data[$num]);    ?>
+                              			  if($num <4) {  unset($data[$num]);    ?>
                               					
                                                 <div class="carousel-item <?php echo  $carsoul_type;?>">
-                                                    <img class=" img-fluid w-100"  data-type="img" data-id="<?php echo $row_header->id ?>" href="<?php echo $row_header->hyf_info ?>"
+                                                    <a href="<?php  echo $row_header->hyp_info; ?>">  <img class=" img-fluid w-100"  data-type="img" data-id="<?php echo $row_header->id ?>" href="<?php echo $row_header->hyf_info ?>"
                                                          src="{{ URL::to('/') }}<?php echo "/". $row_header->src ?>"
                                                           style="height: 455px !important;"
-                                                         alt="First slide">
+                                                          alt=""></a>
                                                 </div>
                                                <?php  } $num++; }   ?>
-
 
                                             </div>
                                             <!--/.Slides-->
@@ -72,12 +67,12 @@
                                 <div class="card stretch-card mb-4">
                                     <div class="card-body d-flex flex-wrap justify-content-between">
                                         <div>
-                                            <img  style="height: 455px !important;"
+                                          <a href="<?php  echo $data[4]->hyp_info; ?>">  <img  style="height: 455px !important;"
                                                   class="img-fluid w-100" 
                                                   data-type="img" data-id="<?php echo $data[4]->id ?>"
                                                    href="<?php echo $data[4]->hyf_info ?>"
                                                   src="{{ URL::to('/') }}<?php echo "/". $data[4]->src ?>"
-                                                  alt="" />
+                                                  alt="" /></a>
                                         </div>
                                     </div>
                                     <div>
@@ -98,16 +93,16 @@
                        
                            foreach($data as $rows){
                              
-                            //  if($i >4) { 
                               ?>
                                     <div class="col-sm-3 stretch-card grid-margin">
                                           <div class="card">
                                               <div class="card-body p-0" >
+                                                  <a href="<?php  echo $rows->hyp_info; ?>">
                                                   <img class="img-fluid w-100"  data-type="img" data-id="<?php echo $rows->id ?>" 
                                                                    href="<?php echo $rows->hyf_info ?>"
                                                                    src="{{ URL::to('/') }}<?php echo "/". $rows->src ?>"
                                                                     style="height: 223 !important;"
-                                                                   alt="" />
+                                                                    alt="" /></a>
                                               </div>
                                                <div class="card-body px-3 text-dark">
                                                   <div class="d-flex justify-content-between">
@@ -119,36 +114,20 @@
                                               
                                           </div>
                                       </div>
-                                    <?php //}   $i++; 
+                                    <?php  
                                 } ?>
-                                     
-                                      
                                   </div>
                       
                         <!--  -->
                         <!--/.Carousel Wrapper-->
                         <!-- last row starts here -->
                         <div class="row">
-                            <div class="col-sm-4 col-xl-4 stretch-card grid-margin">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="d-flex border-bottom mb-4 pb-2">
-                                            <div class="hexagon">
-                                                <div class="hex-mid hexagon-success">
-                                                    <i class="mdi mdi-fad mdi mdi-cellphone"></i>
-                                                </div>
-                                            </div>
-                                            <div class="pl-4">
-                                                <h4 class="font-weight-bold text-success mb-0"> ඇමතීම් </h4>
-                                                <small class="text-muted"><b>+94 11 2100 500 / +94 71 1100 500</b></small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 col-xl-4 stretch-card grid-margin">
+                            
+                          <?php  
+                          $inc =0;
+                          foreach($contact as $rows_contact){?>
+                              
+                              <div class="col-sm-4 col-xl-4 stretch-card grid-margin">
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="d-flex border-bottom mb-4 pb-2">
@@ -158,40 +137,25 @@
                                                 </div>
                                             </div>
                                             <div class="pl-4">
-                                                <h4 class="font-weight-bold text-warning mb-0">විද්යුත් තැපෑල </h4>
-                                                <small class="text-muted"><b>info@sltc.ac.lk</b></small>
+                                                <h4 class="font-weight-bold text-warning mb-0"><?php echo $rows_contact->symbol;   ?></h4>
+                                                <small class="text-muted"><b><?php echo $rows_contact->description;   ?></b></small>
                                             </div>
                                         </div>
                                     </div>
                                     <div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-4 col-xl-4 stretch-card grid-margin">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="d-flex border-bottom mb-4 pb-2">
-                                            <div class="hexagon">
-                                                <div class="hex-mid hexagon-danger">
-                                                    <i class="mdi mdi-email"></i>
-                                                </div>
-                                            </div>
-                                            <div class="pl-4">
-                                                <h4 class="font-weight-bold text-danger mb-0">ලිපිනය</h4>
-                                                <small class="text-muted"><b>Main Campus
-                                                        Ingiriya Road, Padukka, Sri Lanka.</b></small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
+                            </div> 
+                          
+                             <?php 
+                                } ?>
+                            
+                           
                         </div>
                         <!-- end -->		  
                     </div>
                     <!-- content-wrapper ends -->
                     <!-- partial:partials/_footer.html -->
-                    <!---- end ddddddddddddd  --->
                     <footer class="footer" style="background: #2d3246;">
                         <div class="container">
                             <div class="row row-30">

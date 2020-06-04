@@ -32,59 +32,47 @@
                     <div class="container">
                         <ul class="nav page-navigation">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">
+                                <a class="nav-link" href="{{URL::to('/')}}">
                                     <i class="mdi mdi-compass-outline menu-icon"></i>
                                     <span class="menu-title">Home</span>
                                 </a>
                             </li>
+                           
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class="mdi mdi-monitor-dashboard menu-icon"></i>
-                                    <span class="menu-title">WHO WE ARE</span>
-                                    <i class="menu-arrow"></i>
+                                <a class="nav-link" href="{{URL::to('backend')}}">
+                                    <i class="mdi mdi-clipboard-text menu-icon"></i>
+                                    <span class="menu-title">BACK-END</span>
                                 </a>
-                                <div class="submenu">
-                                    <ul class="submenu-item">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="pages/ui-features/buttons.html">STUDY</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="pages/ui-features/dropdowns.html">EDUCATION</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="pages/ui-features/typography.html">RESEARCH</a>
-                                        </li>
-                                    </ul>
-                                </div>
                             </li>
+                            
                             <li class="nav-item">
-                                <a class="nav-link" href="pages/forms/basic_elements.html">
+                                <a class="nav-link" href="#">
                                     <i class="mdi mdi-clipboard-text menu-icon"></i>
                                     <span class="menu-title">STUDY</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="pages/icons/mdi.html">
+                                <a class="nav-link" href="#">
                                     <i class="mdi mdi-contacts menu-icon"></i>
                                     <span class="menu-title">EDUCATION</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="pages/charts/chartjs.html">
+                                <a class="nav-link" href="#">
                                     <i class="mdi mdi-chart-bar menu-icon"></i>
                                     <span class="menu-title">RESEARCH</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="pages/tables/basic-table.html">
+                                <a class="nav-link" href="#">
                                     <i class="mdi mdi-table-large menu-icon"></i>
                                     <span class="menu-title">STAFF & STUDENTS</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="https://www.bootstrapdash.com/demo/plus-free/documentation/documentation.html" class="nav-link" target="_blank">
+                                <a href="#" class="nav-link" target="_blank">
                                     <i class="mdi mdi-file-document-box menu-icon"></i>
-                                    <span class="menu-title">`WORK WITH US</span></a>
+                                    <span class="menu-title">WORK WITH US</span></a>
                             </li>
                         </ul>
                     </div>

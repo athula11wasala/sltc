@@ -16,6 +16,7 @@ class CreateContactTable extends Migration
         Schema::create('tbl_contact_info', function (Blueprint $table) {
             $table->increments('id');
             $table->string ( 'description',512 );
+            $table->string ( 'symbol' );
             $table->tinyInteger ( 'type' )->nullable ()->default ( 1 )->comment = "type 1=tel, 2=email 3=address";
             $table->timestamps();
             

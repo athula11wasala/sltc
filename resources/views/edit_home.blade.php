@@ -39,12 +39,15 @@
                                                         </span>
                                                     </div>
                                                 </div>
-                                            <?php } else { ?>
+                                            <?php }  else {  ?>
 
-                                                <input name="HndType" type="hidden" value="contact_info">
+                                                <input name="HndType" type="hidden" value="contact_info"/>
                                                 <div class="form-group">
                                                     <label for="exampleInputEmail3">Description</label>
-                                                    <input type="text" name='InputContact' class="form-control" id="exampleInputEmail3" placeholder="Email" />
+                                                    <input type="text" name='InputContact'
+                                                        value =" <?php echo $data['description']; ?>"
+                                                           class="form-control" 
+                                                           id="exampleInputEmail3" placeholder="Description" />
                                                 </div>
                                             <?php } ?>
 
