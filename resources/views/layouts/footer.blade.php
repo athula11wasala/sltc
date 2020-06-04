@@ -23,12 +23,24 @@
         <script src="{{ URL::to('/') }}/assets/js/dashboard.js"></script>
         <script>
 $(document).ready(function () {
-    $("#btnClick").click(function () {
+  
+        var url = $('meta[name="base_url"]').attr('content');
+        
+        $(document).on("click","#btnClick",function() {
+    
+        var id =  $(this).attr("data-id") ;
+        var type =$(this).attr("data-type") ;
+         window.location = url + "/backend/edit/" + id + "/" + type;
+       
+    });
+    
+        
+        $("#btnSlideClick").click(function () {
 
         var id = document.querySelector('.carousel-item.active > img').getAttribute('data-id');
         var type = document.querySelector('.carousel-item.active > img').getAttribute('data-type');
         console.log(document.querySelector('.carousel-item.active > img').getAttribute('src'));
-        var url = $('meta[name="base_url"]').attr('content');
+       
 
         window.location = url + "/backend/edit/" + id + "/" + type;
     });

@@ -4,9 +4,9 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class HomeRequest extends FormRequest
-{
-  /**
+class HomeRequest extends FormRequest {
+
+    /**
      * Determine if the user is authorized to make this request.
      *
      * @return bool
@@ -22,33 +22,33 @@ class HomeRequest extends FormRequest
      */
     public function messages() {
         return [
-            'name.required' => 'The name is Required.',
-            'detail.required' => 'The detail is Required.',
-            'price.required' => 'The price is Required.',
+            'InputUrl.required' => 'The Url is Required.',
+            'InputImg.required' => 'The Image is Required.',
+            'InputContact.required' => 'The Contact details is Required.',
         ];
     }
 
     public function rules() {
 
+        // $fileName = $image->getClientOriginalName ();
+
         switch ($this->method()) {
             case "POST":
 
+                if ($this->input('HndType') == 'img') {
+                    
+
+                    $rules['InputUrl'] = 'required';
+                    if (!empty($this->file('InputImg'))) {
+                        $rules['InputImg'] = 'mimes:jpeg,bmp,png,jpg|max:2048';
+                    }
+                    return $rules;
+                }
+
                 return [
-                    'name' => 'bail|required|max:255',
-                    'detail' => 'required|max:255',
-                    'price' => 'required|numeric',
+                    'InputContact' => 'required',
                 ];
         }
-    }
-
-    protected function failedValidation(\Illuminate\Contracts\Validation\Validator $validator) {
-        $response = new JsonResponse(['data' => [],
-            'meta' => [
-                'message' => 'The given data is invalid',
-                'errors' => ['name'=>'ss required']
-            ]], 422);
-
-        throw new \Illuminate\Validation\ValidationException($validator, $response);
     }
 
 }

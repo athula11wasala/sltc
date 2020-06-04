@@ -1,43 +1,21 @@
-
 @include('layouts.header')
-    
-
-            <!-- partial -->
-            <div class="container-fluid page-body-wrapper">
-                <div class="main-panel">
-                    <div class="content-wrapper">
-                        <div class="page-header">
-                            <h3 class="page-title">Edit Home</h3>
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page"> Edit  </li>
-                                </ol>
-                            </nav>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 grid-margin stretch-card">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="alert alert-success" role="alert">
-                                            This is a success alert—check it out!
-                                        </div>
-
-                                        <div class="alert alert-danger" role="alert">
-                                            This is a danger alert—check it out!
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+     <meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />
+                     @include('layouts.message')
+                            
                             <div class="col-12 grid-margin stretch-card">
                                 <div class="card">
                                     <div class="card-body">
                                         <h4 class="card-title"></h4>
                                         <p class="card-description"></p>
-                                        <form class="forms-sample"  method="post" url="backend/edit">
+                                        <form class="forms-sample" enctype="multipart/form-data"   'files' = 'true' method="post"  action="{{url("backend/update")}}" >
+                            
+                                            
+                                                
+                                            
                                        {{ csrf_field() }}
                                             <?php if (!empty($data['id'])) { ?>
-                                                <input name="HndId" type="hidden" <?php echo $data['id']; ?>"> <?php } ?>
+                                                <input name="HndId" type="hidden" value="<?php echo $data['id']; ?>> <?php } ?>"  /> 
                                             <?php if (!empty($data['src'])) { ?>
                                                 <div class="form-group">
                                                     <input name="HndType" type="hidden" value="img">
@@ -52,12 +30,12 @@
                                                 </div>
 
                                                 <div class="form-group">
+                                                 
                                                     <label>Image upload</label>
-                                                    <input type="file" name="InputImg[]" class="file-upload-default" />
                                                     <div class="input-group col-xs-12">
-                                                        <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image" />
                                                         <span class="input-group-append">
-                                                            <button class="file-upload-browse btn btn-primary" type="button"> Upload </button>
+                                                             <input  class="file-upload-browse btn btn-success" type="file" name="InputImg" id="fileToUpload">
+                                                          
                                                         </span>
                                                     </div>
                                                 </div>
@@ -66,7 +44,7 @@
                                                 <input name="HndType" type="hidden" value="contact_info">
                                                 <div class="form-group">
                                                     <label for="exampleInputEmail3">Description</label>
-                                                    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email" />
+                                                    <input type="text" name='InputContact' class="form-control" id="exampleInputEmail3" placeholder="Email" />
                                                 </div>
                                             <?php } ?>
 

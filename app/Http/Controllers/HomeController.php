@@ -5,7 +5,8 @@ namespace App\Http\Controllers;
 use App\Services\CommonService;
 use App\Http\Requests\HomeRequest;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Redirect;
 
 
 class HomeController extends Controller
@@ -31,22 +32,41 @@ class HomeController extends Controller
 
     }
 
+    public  function Homeindex(){
+     
+        
+        $data = $this->commonService->getImagetDetail();
+       
+        return view('/home_front')->with(['data'=>$data]);
+    }
 
     public function index(Request $request)
     {
 
         $data = $this->commonService->getImagetDetail($request->all());
-        $url = url('/'); 
        
-        return view('/home_backend')->with(['data'=>$data,'url' =>$url]);
-        //return $this->respond($data);
+        return view('/home_backend')->with(['data'=>$data]);
+        
     }
     
-    public function updateImageInfo($id = null,$type=null, Request $request){
-        
-        if ( $request->isMethod('post')) {
-            die();
+    public function postImageInfo(HomeRequest $request){
+    
+        if( $this->commonService->updateImagetDetail($request->all()) == true){
+            
+             return Redirect::to("backend/")
+                                ->with("message", "Successfully Updated.");
         }
+        return Redirect::to("backend/")
+                             ->with("messageWarning", "Something Went wrong.");;
+                                
+        
+           
+        
+    }
+    
+    public function backEndImageInfo($id = null,$type=null){
+        
+       
         if(isset($id)){
             
         $data = $this->commonService->retImageInfo($id);

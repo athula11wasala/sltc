@@ -61,8 +61,6 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="text-center "> <button id='btnSlideClick' type="submit" class="btn btn-primary mb-2"> Modify </button> 
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -83,11 +81,6 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="text-center ">    <button id='btnClick' type="submit" 
-                                                                              data-type="img" 
-                                                                              data-id="<?php echo $data[4]->id ?>"
-                                                                              class="btn btn-primary mb-2"> Modify </button> 
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -123,11 +116,7 @@
                                                   <div class="d-flex justify-content-between font-weight-semibold">
                                                   </div>
                                               </div>
-                                              <div class="text-center"><button id='btnClick' type="submit" 
-                                                                              data-type="img" 
-                                                                              data-id="<?php echo $rows->id ?>"
-                                                                              class="btn btn-primary mb-2"> Modify </button>  
-                                              </div>
+                                              
                                           </div>
                                       </div>
                                     <?php //}   $i++; 
@@ -156,8 +145,6 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="text-center ">    <button type="submit" class="btn btn-primary mb-2"> Modify </button> 
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -177,8 +164,6 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="text-center ">    <button type="submit" class="btn btn-primary mb-2"> Modify </button> 
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -198,10 +183,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div>
-                                        <div class="text-center ">    <button type="submit" class="btn btn-primary mb-2"> Modify </button> 
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
